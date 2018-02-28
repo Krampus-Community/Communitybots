@@ -16,7 +16,6 @@ exports.discordbot = function() {
     const util = require("util");
     const request = require("request");
     const schedule = require('node-schedule');
-    const search = require('youtube-search')
     const markdown = require("markdown").markdown;
     const errorlog = require("./data/errors.json")
     const Promise = require('bluebird');
@@ -46,7 +45,7 @@ ${chalk.grey('--------------------------------------------------')}
     });
 
     const statustxt = () => {
-        dclient.user.setGame('Discord has been ADDED. | Prefix ' + prefix + ' | ' + dclient.users.size + ' Users | ' + dclient.guilds.size + ' Servers', 'https://twitch.tv/' + twitch);
+        dclient.user.setGame('Discord has Started. | Prefix ' + prefix + ' | ' + dclient.users.size + ' Users | ' + dclient.guilds.size + ' Servers', 'https://twitch.tv/' + twitch);
     };
 
     dclient.on('ready', statustxt);
