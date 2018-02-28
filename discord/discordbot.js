@@ -1,7 +1,7 @@
 exports.discordbot = function() {
     const config = require('./../config.json');
-    const subscribers = require('./subscribers.json');
-    const admin_config = require('./admins.json');
+    const subscribers = require('./../subscribers.json');
+    const admin_config = require('./../admins.json');
     const getJSON = require("get-json");
     //const stats = require('./status.txt');
     const admins = config.discord.admins;
@@ -86,8 +86,8 @@ ${chalk.grey('--------------------------------------------------')}
     //This code was made by Tobiah aka Warframe Owner
     dclient.on("guildMemberUpdate", (oldMember, newMember) => {
         let subscribers = {
-            list: JSON.parse(fs.readFileSync('./subscribers.json')) || [],
-            path: './subscribers.json',
+            list: JSON.parse(fs.readFileSync('./../subscribers.json')) || [],
+            path: './../subscribers.json',
         };
         if (newMember.guild.id === config.roles.patron_guild) {
             if (newMember.roles.has(config.roles.coal_role)) {
@@ -146,8 +146,8 @@ ${chalk.grey('--------------------------------------------------')}
         }
 
         let staff = {
-            list: JSON.parse(fs.readFileSync('./admins.json')) || [],
-            path: './admins.json',
+            list: JSON.parse(fs.readFileSync('./../admins.json')) || [],
+            path: './../admins.json',
         };
         if (newMember.guild.id === config.roles.patron_guild) {
             if (newMember.roles.has(config.roles.admin_role)) {
