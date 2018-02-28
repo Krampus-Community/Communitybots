@@ -37,7 +37,7 @@ exports.discordbot = function() {
     dclient.on('ready', () => {
         console.log(`
 ${chalk.grey('--------------------------------------------------')}
-${chalk.blue('Discord Loaded, Loading Modules for Discord')}
+${chalk.blue('Discord ') + chalk.green(' Loaded, Loading Modules for ') + chalk.blue('Discord ')}
 ${chalk.grey('--------------------------------------------------')}
 `);
         console.log('We ready, We connected at ' + dclient.guilds.size + ' Servers');
