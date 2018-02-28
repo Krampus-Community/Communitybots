@@ -1,0 +1,46 @@
+{
+	"steam": {
+		"username": "Username",
+		"password": "password",
+		"sharedSecret": "sharedSecret",
+		"identitySecret": "identitySecret",
+		"ownerID": "ownerID"
+	},
+	"roles": {
+		"coal_role": "",
+		"": "",
+		"": "",
+		"": "",
+		"": "",
+		"PRVSub_role": "",
+		"admin_role": "415505625603375104",
+		"mod_role": "415505635560521745",
+		"patron_guild": "415505236598325248"
+	},
+	"mixer": {
+		"Token": "BOTTOKEN"
+	},
+	"discord": {
+		"token": "Token",
+		"client_id": "botid",
+		"prefix": "^",
+		"owner_id": "ownerid",
+		"owner": "name",
+		"twitch_api_key": "Twitch APIKEY",
+		"authorization": "bots.discord.pw API",
+		"authorization1": "discordbots.org API",
+		"twitchname": "twitch name",
+		"subAnnounceChat": "sub alets channel",
+		"subAlertChat": "meh other 1",
+		"bf1trnkey": "bf1 APIKEY",
+		"fnltrnkey": "FORTNITE APIKEY",
+		"hypixelAPI": "HYPIXEL APIKEY",
+		"youtube_api_key": "YOUTUBE APIKEY"
+	},
+	"twitch": {
+		"TBOAuth": "oauth",
+		"TBUsername": "Username",
+		"Channels": ["channel1", "channel2"]
+	}
+	
+}
