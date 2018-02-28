@@ -720,20 +720,22 @@ ${chalk.grey('--------------------------------------------------')}
         }*/
 
         if (message.content.startsWith(prefix + 'help')) {
-            message.channel.sendMessage("Help command not be DONE! please read &>comingsoon for more INFO!");
+            message.channel.sendMessage("The help command is a work in progress! Please use ^comingsoon for more information!");
         }
 
         if (message.content.startsWith(prefix + 'patreon')) {
             let embed = new Discord.RichEmbed();
             embed.setColor(0x9900FF)
-            embed.setTitle("Patreon Info (Click HERE!)")
+            embed.setTitle("Patreon Info (Click Here!)")
             embed.setThumbnail(dclient.user.avatarURL)
             embed.setURL("https://www.patreon.com/krampuscommunity")
-            embed.addField("Coal Krampus: $5", "Info Coming SOON!", true)
-            embed.addField("Iron Krampus: $10", "Info Coming SOON!", true)
-			embed.addField("Gold Krampus: $15", "Info Coming SOON!", true)
-			embed.addField("Diamond Krampus: $20", "Info Coming SOON!", true)
-			embed.addField("Emerald Krampus: $25", "Info Coming SOON!", true)
+            embed.addField("Coal Krampus: $5", "Info Coming Soon!", true)
+            embed.addField("Iron Krampus: $10", "Info Coming Soon!", true)
+	    embed.addField("Gold Krampus: $15", "Info Coming Soon!", true)
+	    embed.addField("Diamond Krampus: $20", "Info Coming Soon!", true)
+	    embed.addField("Emerald Krampus: $25", "Info Coming Soon!", true)
+	    embed.addField("If you purchased a Pateron rank and have not received it yet", "Please contact owners or admins here: https://discord.gg/5xpb8gV", true)
+            embed.addField("All Patreon donations go towards the following:", "VPS Payments \nGame Servers \nWebsite hosting \nDomain", true)
             embed.setFooter("Sent via " + dclient.user.username, dclient.user.avatarURL)
             embed.setTimestamp()
 
@@ -745,10 +747,10 @@ ${chalk.grey('--------------------------------------------------')}
             embed.setColor(0x9900FF)
             embed.setTitle("Whats Coming SOON!")
             embed.setThumbnail(dclient.user.avatarURL)
-            embed.addField("This is Schedule Whats going be made", "(WARNING!) \nThere will be some BUGS and Issues, so Please Report it @ \n https://discord.gg/5xpb8gV", true)
+            embed.addField("This is the schedule of whats going be made", "(WARNING!) \nThere will be some bugs and issues, so please report it @ \n https://discord.gg/5xpb8gV", true)
             embed.addField("TODO List", "Empty", true)
-            embed.addField("TODO:", "Workign on Mixer/Twitch BOT. \nWorking on Accoint for Steam.", true)
-            embed.addField("Working ON:", "Commands List. \nDeleting commands dont need.", true)
+            embed.addField("TODO:", "Working on Mixer/Twitch BOT. \nWorking on account for Steam.", true)
+            embed.addField("Working ON:", "Commands List. \nDeleting commands we dont need.", true)
             embed.addField("DONE:", "Empty", true)
             embed.setFooter("Sent via " + dclient.user.username, dclient.user.avatarURL)
             embed.setTimestamp()
@@ -759,17 +761,17 @@ ${chalk.grey('--------------------------------------------------')}
         if (message.content.startsWith(prefix + 'invite')) {
             let embed = new Discord.RichEmbed();
             embed.setColor(0x9900FF)
-            embed.setTitle("Invite BOT!")
+            embed.setTitle("Invite this bot!")
             embed.setURL("https://discordapp.com/oauth2/authorize?permissions=1341643849&scope=bot&client_id=" + client_id)
             embed.setThumbnail(dclient.user.avatarURL)
-            embed.addField("Welcome to", dclient.user.username+" BOT!", true)
-            embed.addField("Please Read", "First before do stuff!", true)
+            embed.addField("Welcome to the", dclient.user.username+" Bot!", true)
+            embed.addField("Please Read", #krampus-homeland first!, true)
             embed.addField("To access SUB commands", "You need be in DISCORD @ https://discord.gg/5xpb8gV", true)
-            embed.addField("IF you done Pateron and didn't came threw", "Please Contact OWNERS, Moderators @ HERE: https://discord.gg/5xpb8gV", true)
-            embed.addField("All Donations goes to", "VPS Payments \nGame Servers \nWebsite hosting \nDomain", true)
+            embed.addField("If you purchased a Pateron rank \nand have not received it yet", "Please contact owners or admins here: https://discord.gg/5xpb8gV", true)
+            embed.addField("All Patreon donations go towards the following:", "VPS Payments \nGame Servers \nWebsite hosting \nDomain", true)
             embed.addField("Rules", "Read <#415583630400815124> for more INFO!", true)
             embed.addField("Supporting", "Mental Health via Games", true)
-            embed.addField("Charity", "Empty", true)
+            embed.addField("Charity", "To be announced!", true)
             embed.setFooter("Sent via " + dclient.user.username, dclient.user.avatarURL)
             embed.setTimestamp()
 
